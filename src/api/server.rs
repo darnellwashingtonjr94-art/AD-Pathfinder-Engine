@@ -1,0 +1,9 @@
+use axum::Server;
+use crate::api::routes::create_router;
+
+pub async fn run() -> Result<(), Box<dyn std::error::Error>> {
+    let app = create_router();
+    let listener = tokio::net::TcpListener::bind("127.0.0.1:8080").await?;
+    axum::serve(listener, app).await?;
+    Ok(())
+}
