@@ -1,0 +1,7 @@
+[server]
+host = "127.0.0.1"
+port = 8080
+
+[engine]
+max_depth = 10
+timeout_seconds = 30
