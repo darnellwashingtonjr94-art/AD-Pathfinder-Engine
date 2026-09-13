@@ -1,0 +1,9 @@
+[gemini_pro_thinking]
+model = "gemini-3-pro"
+temperature = 0.2
+max_tokens = 2048
+
+[nano_banana]
+model = "nano-banana-pro"
+render_resolution = "2K"
+upscale = "4K"
